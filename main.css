@@ -1,0 +1,119 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+    transition: all 500ms linear;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+}
+
+
+.quiz-card{
+    width: 28rem;
+    height: 35rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    gap: 2rem;
+}
+
+.quiz-question{
+    
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.quiz-answers{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-question span{
+    font-size: 1.3rem;
+}
+
+.a,.b,.c,.d{
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.quiz-card img{
+    width: 8rem;
+    height: 5rem;
+}
+
+.correct{
+    background-color: green;
+    color: white;
+    border: unset;
+}
+
+.wrong{
+   background-color: red;
+   color: white;
+   border: unset;
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    height: 25rem;
+    width: 25rem;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.restart{
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
