@@ -52,8 +52,8 @@ const loadGame = async () => {
             
             answer.addEventListener('click', (event) => {
         
-                console.log(event.target)
-    
+                // event.stopImmediatePropagation()
+                 
                 
                 if (event.target.textContent === data.data[pickCountry].name.common) {
                     quizAnswersField.querySelectorAll('div').forEach(answer => {
@@ -72,6 +72,7 @@ const loadGame = async () => {
                         
                     })
                     answer.classList.add('wrong')
+    
                     
                 
 
